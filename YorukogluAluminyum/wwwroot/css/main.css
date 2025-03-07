@@ -256,6 +256,7 @@ h6 {
   margin: 0 0 0 30px;
   border-radius: 50px;
   transition: 0.3s;
+  border: none;
 }
 
 .header .btn-getstarted:hover,
@@ -1886,4 +1887,8 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+.mr-1 {
+  margin-right: 4px;
 }

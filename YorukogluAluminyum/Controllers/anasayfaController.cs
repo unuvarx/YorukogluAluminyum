@@ -2,10 +2,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace YorukogluAluminyum.Controllers;
 
-public class anasayfa : Controller
+public class anasayfaController : Controller
 {
     // GET
-    public IActionResult Index()
+    public IActionResult index()
     {
         ViewBag.ActivePage = 0;
         return View();

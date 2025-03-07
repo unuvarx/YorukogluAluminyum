@@ -5,8 +5,9 @@ namespace YorukogluAluminyum.Controllers;
 public class lazerkesimController : Controller
 {
     // GET
-    public IActionResult Index()
+    public IActionResult index()
     {
+        ViewBag.ActivePage = 4;
         return View();
     }
 }

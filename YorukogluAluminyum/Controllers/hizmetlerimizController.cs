@@ -5,8 +5,9 @@ namespace YorukogluAluminyum.Controllers;
 public class hizmetlerimizController : Controller
 {
     // GET
-    public IActionResult Index()
+    public IActionResult index()
     {
+        ViewBag.ActivePage = 2;
         return View();
     }
 }

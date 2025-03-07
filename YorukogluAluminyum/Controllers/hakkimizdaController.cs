@@ -5,8 +5,9 @@ namespace YorukogluAluminyum.Controllers;
 public class hakkimizdaController : Controller
 {
     // GET
-    public IActionResult Index()
+    public IActionResult index()
     {
+        ViewBag.ActivePage = 1;
         return View();
     }
 }

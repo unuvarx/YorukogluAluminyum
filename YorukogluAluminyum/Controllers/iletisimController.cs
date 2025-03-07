@@ -5,8 +5,9 @@ namespace YorukogluAluminyum.Controllers;
 public class iletisimController : Controller
 {
     // GET
-    public IActionResult Index()
+    public IActionResult index()
     {
+        ViewBag.ActivePage = 5;
         return View();
     }
 }
