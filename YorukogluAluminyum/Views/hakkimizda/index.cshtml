@@ -1,26 +1,227 @@
 @{
-    ViewBag.Title = "Hakkımızda";
-    Layout = "_Layout";
+  ViewBag.Title = "Hakkımızda";
+  Layout = "_Layout";
 }
 
 <!-- Page Title -->
 <div class="page-title" data-aos="fade">
-    <div class="heading">
-        <div class="container">
-            <div class="row d-flex justify-content-center text-center">
-                <div class="col-lg-8">
-                    <h1>Hakkımızda<br></h1>
-                    <p class="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
-                </div>
-            </div>
+  <div class="heading">
+    <div class="container">
+      <div class="row d-flex justify-content-center text-center">
+        <div class="col-lg-8">
+          <h1>Hakkımızda<br></h1>
+          <p class="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas
+            consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit
+            quaerat ipsum dolorem.</p>
         </div>
+      </div>
     </div>
-    <nav class="breadcrumbs">
-        <div class="container">
-            <ol>
-                <li><a href="/anasayfa">Anasayfa</a></li>
-                <li class="current"> Hakkımızda<br></li>
-            </ol>
-        </div>
-    </nav>
+  </div>
+  <nav class="breadcrumbs">
+    <div class="container">
+      <ol>
+        <li><a href="/anasayfa">Anasayfa</a></li>
+        <li class="current"> Hakkımızda<br></li>
+      </ol>
+    </div>
+  </nav>
 </div><!-- End Page Title -->
+
+
+<!-- Hakkımızda Bölümü -->
+<section id="about-us" class="section about-us">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
+        <img src="~/uploads/template/img/about-2.jpg" class="img-fluid" alt="Yörükoğlu Alüminyum Metal Atölyesi">
+      </div>
+      <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
+        <h3>Güçlü, Estetik ve Dayanıklı Metal İşleri</h3>
+        <p class="fst-italic">
+          Yörükoğlu Alüminyum Metal olarak, alüminyum ve metal sektöründe yılların tecrübesiyle en kaliteli hizmeti
+          sunuyoruz.
+        </p>
+        <ul>
+          <li><i class="bi bi-check-circle"></i>
+            <span>Dayanıklı ve estetik demir kapı, korkuluk ve balkon sistemleri.</span></li>
+          <li><i class="bi bi-check-circle"></i> <span>Özel tasarım alüminyum doğrama ve ferforje işçiliği.</span></li>
+          <li><i class="bi bi-check-circle"></i>
+            <span>Müşteri odaklı üretim anlayışı ile kaliteyi ön planda tutuyoruz.</span></li>
+          <li><i class="bi bi-check-circle"></i> <span>Endüstriyel metal ürünleri ve alüminyum yapılar.</span></li>
+          <li><i class="bi bi-check-circle"></i> <span>Proje bazlı çözüm önerileri ve özel ölçü üretimleri.</span></li>
+          <li><i class="bi bi-check-circle"></i> <span>Çevre dostu üretim ve geri dönüşüm odaklı iş anlayışı.</span>
+          </li>
+          <li><i class="bi bi-check-circle"></i> <span>Yüksek kaliteli malzemeler ile uzun ömürlü çözümler.</span></li>
+        </ul>
+
+        <!-- Bootstrap Tabs for Mission and Vision -->
+        <ul class="nav nav-tabs" id="missionVisionTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="mission-tab" data-bs-toggle="tab" href="#mission" role="tab"
+               aria-controls="mission" aria-selected="true">Misyonumuz</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="vision-tab" data-bs-toggle="tab" href="#vision" role="tab" aria-controls="vision"
+               aria-selected="false">Vizyonumuz</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="missionVisionTabsContent">
+          <div class="tab-pane fade show active" id="mission" role="tabpanel" aria-labelledby="mission-tab">
+            <p>
+              Müşterilerimize yüksek kaliteli ve estetik açıdan tatmin edici metal ürünler sunmak. Teknolojik
+              gelişmeleri takip ederek, güvenli ve çevre dostu üretim süreçleriyle alüminyum ve metal sektörüyle ilgili
+              her türlü ihtiyaca en uygun çözümleri sağlamak.
+            </p>
+          </div>
+          <div class="tab-pane fade" id="vision" role="tabpanel" aria-labelledby="vision-tab">
+            <p>
+              Türkiye'nin en güvenilir alüminyum ve metal işleme firmalarından biri olmak. İnovatif tasarımlar ve
+              sürdürülebilir üretim anlayışımızla sektördeki liderliğimizi sürdürmek.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- /Hakkımızda Bölümü -->
+
+
+<!-- İstatistikler Bölümü -->
+<section id="counts" class="section counts light-background">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row gy-4">
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item text-center w-100 h-100">
+          <span data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="1"
+                class="purecounter"></span>
+          <p>Mutlu Müşteri</p>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item text-center w-100 h-100">
+          <span data-purecounter-start="0" data-purecounter-end="250" data-purecounter-duration="1"
+                class="purecounter"></span>
+          <p>Tamamlanan Proje</p>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item text-center w-100 h-100">
+          <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
+                class="purecounter"></span>
+          <p>Yıllık Tecrübe</p>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item text-center w-100 h-100">
+          <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1"
+                class="purecounter"></span>
+          <p>Uzman Usta</p>
+        </div>
+      </div><!-- End Stats Item -->
+    </div>
+  </div>
+</section><!-- /İstatistikler Bölümü -->
+
+<!-- Features Section -->
+<section id="features" class="features section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Özellikler</h2>
+    <p>Yörükoğlu Alüminyum Metal'in sunduğu özellikleri keşfedin<br></p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row">
+      <div class="col-lg-3">
+        <ul class="nav nav-tabs flex-column">
+          <li class="nav-item">
+            <a class="nav-link active show" data-bs-toggle="tab" href="#features-tab-1">Dayanıklı ve Estetik Tasarımlar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#features-tab-2">Özel Tasarım Çözümler</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#features-tab-3">Çevre Dostu Üretim</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#features-tab-4">Sürdürülebilir Kalite</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#features-tab-5">İnovatif Metal Çözümleri</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-9 mt-4 mt-lg-0">
+        <div class="tab-content">
+          <div class="tab-pane active show" id="features-tab-1">
+            <div class="row">
+              <div class="col-lg-8 details order-2 order-lg-1">
+                <h3>Dayanıklı ve Estetik Tasarımlar</h3>
+                <p class="fst-italic">Yörükoğlu Alüminyum Metal, güçlü ve estetik tasarımlar sunarak, demir kapı, korkuluk ve balkon sistemlerinde yüksek kaliteyi hedefler.</p>
+                <p>Her ürünümüz, modern estetik anlayışı ile tasarlanırken, dayanıklılığından ödün verilmeden üretilir. Müşterilerimize uzun ömürlü ve şık çözümler sunuyoruz.</p>
+              </div>
+              <div class="col-lg-4 text-center order-1 order-lg-2">
+                <img src="assets/img/tabs/tab-1.png" alt="Dayanıklı ve Estetik Tasarımlar" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="features-tab-2">
+            <div class="row">
+              <div class="col-lg-8 details order-2 order-lg-1">
+                <h3>Özel Tasarım Çözümler</h3>
+                <p class="fst-italic">Özel tasarımlar ve projelere yönelik çözümler sunuyoruz. Her ihtiyaca uygun metal ve alüminyum ürünler ile estetik ve fonksiyonellik sağlıyoruz.</p>
+                <p>İster endüstriyel ister bireysel projeler olsun, Yörükoğlu Alüminyum Metal, her türlü özel tasarım talebini karşılamaya hazırdır. Müşteriye özel çözümlerle her projeye özgünlük katıyoruz.</p>
+              </div>
+              <div class="col-lg-4 text-center order-1 order-lg-2">
+                <img src="assets/img/tabs/tab-2.png" alt="Özel Tasarım Çözümler" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="features-tab-3">
+            <div class="row">
+              <div class="col-lg-8 details order-2 order-lg-1">
+                <h3>Çevre Dostu Üretim</h3>
+                <p class="fst-italic">Çevreye duyarlı üretim süreçleri ile doğal kaynakları verimli kullanarak sürdürülebilir bir üretim yapıyoruz.</p>
+                <p>Alüminyum ve metal işleme süreçlerinde çevre dostu teknolojiler kullanarak, doğaya zarar vermeden en kaliteli ürünleri üretmeye özen gösteriyoruz. Geri dönüşüm odaklı üretim anlayışımızla çevreye katkı sağlıyoruz.</p>
+              </div>
+              <div class="col-lg-4 text-center order-1 order-lg-2">
+                <img src="assets/img/tabs/tab-3.png" alt="Çevre Dostu Üretim" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="features-tab-4">
+            <div class="row">
+              <div class="col-lg-8 details order-2 order-lg-1">
+                <h3>Sürdürülebilir Kalite</h3>
+                <p class="fst-italic">Yörükoğlu Alüminyum Metal olarak, ürünlerimizin her zaman yüksek kalite standartlarına uygun olmasını sağlıyoruz.</p>
+                <p>Kaliteyi her aşamada garanti altına alarak, hem üretim süreçlerinde hem de kullanılan malzemelerde sürdürülebilir kaliteyi ön planda tutuyoruz. Bu sayede uzun ömürlü ve güvenilir ürünler sunuyoruz.</p>
+              </div>
+              <div class="col-lg-4 text-center order-1 order-lg-2">
+                <img src="assets/img/tabs/tab-4.png" alt="Sürdürülebilir Kalite" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="features-tab-5">
+            <div class="row">
+              <div class="col-lg-8 details order-2 order-lg-1">
+                <h3>İnovatif Metal Çözümleri</h3>
+                <p class="fst-italic">Yeni teknolojiler ve inovasyonlarla, sektördeki en son gelişmeleri takip ederek metal işleme çözümlerini sunuyoruz.</p>
+                <p>Yörükoğlu Alüminyum Metal, metal işleme sektöründeki yenilikçi yaklaşımıyla her projeye modern, verimli ve ekonomik çözümler sunar. İnovatif çözümlerimizle her zaman bir adım öndeyiz.</p>
+              </div>
+              <div class="col-lg-4 text-center order-1 order-lg-2">
+                <img src="assets/img/tabs/tab-5.png" alt="İnovatif Metal Çözümleri" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section><!-- /Features Section -->

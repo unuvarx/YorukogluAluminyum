@@ -145,5 +145,34 @@
       }
     });
   });
+  $(document).ready(function() {
+    var isDown = false;
+    var startX;
+    var scrollLeft;
 
+    var carousel = $('#carouselExampleIndicators');
+
+    carousel.on('mousedown', function(e) {
+      isDown = true;
+      startX = e.pageX - carousel.offset().left;
+      scrollLeft = carousel.scrollLeft();
+    });
+
+    carousel.on('mouseleave', function() {
+      isDown = false;
+    });
+
+    carousel.on('mouseup', function() {
+      console.log('mouseleave');
+      isDown = false;
+    });
+
+    carousel.on('mousemove', function(e) {
+      if (!isDown) return;
+      e.preventDefault();
+      var x = e.pageX - carousel.offset().left;
+      var walk = (x - startX) * 3; // Scroll speed
+      carousel.scrollLeft(scrollLeft - walk);
+    });
+  });
 })();

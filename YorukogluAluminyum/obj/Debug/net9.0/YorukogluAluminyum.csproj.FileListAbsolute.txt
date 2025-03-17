@@ -18,7 +18,9 @@
 /Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/obj/Debug/net9.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
 /Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/obj/Debug/net9.0/scopedcss/bundle/YorukogluAluminyum.styles.css
 /Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/obj/Debug/net9.0/scopedcss/projectbundle/YorukogluAluminyum.bundle.scp.css
+/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/obj/Debug/net9.0/compressed/iybwba5vd6-i1q1yffbwo.gz
 /Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/obj/Debug/net9.0/compressed/hivitu8lvx-61n19gt1b8.gz
+/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/obj/Debug/net9.0/compressed/3dzhpm89cl-y9iw5hyda8.gz
 /Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/obj/Debug/net9.0/compressed/yae7lkef06-fr7q2aak1r.gz
 /Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/obj/Debug/net9.0/compressed/81t6emeopl-bqjiyaj88i.gz
 /Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/obj/Debug/net9.0/compressed/ozd0qohbk9-c2jlpeoesf.gz
@@ -158,6 +160,4 @@
 /Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/obj/Debug/net9.0/YorukogluAluminyum.pdb
 /Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/obj/Debug/net9.0/YorukogluAluminyum.genruntimeconfig.cache
 /Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/obj/Debug/net9.0/ref/YorukogluAluminyum.dll
-/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/obj/Debug/net9.0/compressed/iybwba5vd6-i1q1yffbwo.gz
-/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/obj/Debug/net9.0/compressed/3dzhpm89cl-y9iw5hyda8.gz
-/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/obj/Debug/net9.0/compressed/9vdzh5hk4e-ruawlb2q7r.gz
+/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/obj/Debug/net9.0/compressed/9vdzh5hk4e-vx2m1e6tv0.gz

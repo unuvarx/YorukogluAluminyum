@@ -25,5 +25,18 @@ app.MapControllerRoute(
         pattern: "{controller=anasayfa}/{action=Index}/{id?}")
     .WithStaticAssets();
 
+app.UseStaticFiles(new StaticFileOptions
+{
+    OnPrepareResponse = ctx =>
+    {
+        ctx.Context.Response.Headers.Append("Accept-Ranges", "bytes");
+    }
+});
+app.UseStaticFiles(new StaticFileOptions
+{
+    ServeUnknownFileTypes = true,
+    DefaultContentType = "video/mp4"
+});
+
 
 app.Run();

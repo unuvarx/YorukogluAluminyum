@@ -401,6 +401,10 @@
       "PackagePath": "staticwebassets/uploads/template/img/trainers/trainer-3.jpg"
     },
     {
+      "Id": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/wwwroot/uploads/template/video/hero-bg.mp4",
+      "PackagePath": "staticwebassets/uploads/template/video/hero-bg.mp4"
+    },
+    {
       "Id": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/wwwroot/vendor/aos/aos.cjs.js",
       "PackagePath": "staticwebassets/vendor/aos/aos.cjs.js"
     },

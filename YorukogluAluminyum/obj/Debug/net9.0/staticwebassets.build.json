@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HI5yNtXksRFBIW/Hzuq0gdaF1XZIwPpBkkzuadQzKEs=",
+  "Hash": "g9v4P4IiullhmYqD6Cx1xAKRchOTD74hUjd3fQXshzE=",
   "Source": "YorukogluAluminyum",
   "BasePath": "_content/YorukogluAluminyum",
   "Mode": "Default",
@@ -689,12 +689,12 @@
       "OriginalItemSpec": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css"
     },
     {
-      "Identity": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/obj/Debug/net9.0/compressed/9vdzh5hk4e-ruawlb2q7r.gz",
+      "Identity": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/obj/Debug/net9.0/compressed/9vdzh5hk4e-vx2m1e6tv0.gz",
       "SourceId": "YorukogluAluminyum",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/YorukogluAluminyum",
-      "RelativePath": "css/main#[.{fingerprint=ruawlb2q7r}]?.css.gz",
+      "RelativePath": "css/main#[.{fingerprint=vx2m1e6tv0}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -703,8 +703,8 @@
       "RelatedAsset": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/wwwroot/css/main.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "6inekpn9b0",
-      "Integrity": "gkkVfl6LkDKvBAIj28E50xdgYdebs73c5BfZUbhcjUE=",
+      "Fingerprint": "ipxijasukz",
+      "Integrity": "JhZQC9ZyzM4LP831kCjlo8sR3lv1v/ZvEqXMS/M6aWA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/wwwroot/css/main.css"
@@ -2782,8 +2782,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ruawlb2q7r",
-      "Integrity": "DSAGwZaYYpf6IOJgKjnPodSLBxzjKUPGC3RSfFhqfBo=",
+      "Fingerprint": "vx2m1e6tv0",
+      "Integrity": "nQ7br3NdzOmk1NAqpaT1hi/sqJeUcYv8gkgDps1urKc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/main.css"
@@ -4847,6 +4847,27 @@
       "OriginalItemSpec": "wwwroot/uploads/template/img/trainers/trainer-3.jpg"
     },
     {
+      "Identity": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/wwwroot/uploads/template/video/hero-bg.mp4",
+      "SourceId": "YorukogluAluminyum",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/wwwroot/",
+      "BasePath": "_content/YorukogluAluminyum",
+      "RelativePath": "uploads/template/video/hero-bg#[.{fingerprint}]?.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fa1xd2oz6u",
+      "Integrity": "xzlEW996Fs4sSWChA2DA9eo2Z1CE/JmgRg+0abbHYa8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/template/video/hero-bg.mp4"
+    },
+    {
       "Identity": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/wwwroot/vendor/aos/aos.cjs.js",
       "SourceId": "YorukogluAluminyum",
       "SourceType": "Discovered",
@@ -6236,12 +6257,12 @@
   "Endpoints": [
     {
       "Route": "css/main.css",
-      "AssetFile": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/obj/Debug/net9.0/compressed/9vdzh5hk4e-ruawlb2q7r.gz",
+      "AssetFile": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/obj/Debug/net9.0/compressed/9vdzh5hk4e-vx2m1e6tv0.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000144009217"
+          "Quality": "0.000139236981"
         }
       ],
       "ResponseHeaders": [
@@ -6251,15 +6272,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6943"
+          "Value": "7181"
         },
         {
           "Name": "ETag",
-          "Value": "\"gkkVfl6LkDKvBAIj28E50xdgYdebs73c5BfZUbhcjUE=\""
+          "Value": "\"JhZQC9ZyzM4LP831kCjlo8sR3lv1v/ZvEqXMS/M6aWA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 03 Mar 2025 08:32:29 GMT"
+          "Value": "Fri, 07 Mar 2025 21:01:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6279,13 +6300,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"DSAGwZaYYpf6IOJgKjnPodSLBxzjKUPGC3RSfFhqfBo=\""
+          "Value": "W/\"nQ7br3NdzOmk1NAqpaT1hi/sqJeUcYv8gkgDps1urKc=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-DSAGwZaYYpf6IOJgKjnPodSLBxzjKUPGC3RSfFhqfBo="
+          "Value": "sha256-nQ7br3NdzOmk1NAqpaT1hi/sqJeUcYv8gkgDps1urKc="
         }
       ]
     },
@@ -6300,7 +6321,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "40741"
+          "Value": "42573"
         },
         {
           "Name": "Content-Type",
@@ -6308,11 +6329,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"DSAGwZaYYpf6IOJgKjnPodSLBxzjKUPGC3RSfFhqfBo=\""
+          "Value": "\"nQ7br3NdzOmk1NAqpaT1hi/sqJeUcYv8gkgDps1urKc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 03 Mar 2025 08:32:29 GMT"
+          "Value": "Fri, 07 Mar 2025 21:01:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6322,13 +6343,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-DSAGwZaYYpf6IOJgKjnPodSLBxzjKUPGC3RSfFhqfBo="
+          "Value": "sha256-nQ7br3NdzOmk1NAqpaT1hi/sqJeUcYv8gkgDps1urKc="
         }
       ]
     },
     {
       "Route": "css/main.css.gz",
-      "AssetFile": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/obj/Debug/net9.0/compressed/9vdzh5hk4e-ruawlb2q7r.gz",
+      "AssetFile": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/obj/Debug/net9.0/compressed/9vdzh5hk4e-vx2m1e6tv0.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6337,7 +6358,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6943"
+          "Value": "7181"
         },
         {
           "Name": "Content-Type",
@@ -6345,11 +6366,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"gkkVfl6LkDKvBAIj28E50xdgYdebs73c5BfZUbhcjUE=\""
+          "Value": "\"JhZQC9ZyzM4LP831kCjlo8sR3lv1v/ZvEqXMS/M6aWA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 03 Mar 2025 08:32:29 GMT"
+          "Value": "Fri, 07 Mar 2025 21:01:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6367,18 +6388,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-gkkVfl6LkDKvBAIj28E50xdgYdebs73c5BfZUbhcjUE="
+          "Value": "sha256-JhZQC9ZyzM4LP831kCjlo8sR3lv1v/ZvEqXMS/M6aWA="
         }
       ]
     },
     {
-      "Route": "css/main.ruawlb2q7r.css",
-      "AssetFile": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/obj/Debug/net9.0/compressed/9vdzh5hk4e-ruawlb2q7r.gz",
+      "Route": "css/main.vx2m1e6tv0.css",
+      "AssetFile": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/obj/Debug/net9.0/compressed/9vdzh5hk4e-vx2m1e6tv0.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000144009217"
+          "Quality": "0.000139236981"
         }
       ],
       "ResponseHeaders": [
@@ -6388,15 +6409,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6943"
+          "Value": "7181"
         },
         {
           "Name": "ETag",
-          "Value": "\"gkkVfl6LkDKvBAIj28E50xdgYdebs73c5BfZUbhcjUE=\""
+          "Value": "\"JhZQC9ZyzM4LP831kCjlo8sR3lv1v/ZvEqXMS/M6aWA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 03 Mar 2025 08:32:29 GMT"
+          "Value": "Fri, 07 Mar 2025 21:01:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6416,13 +6437,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"DSAGwZaYYpf6IOJgKjnPodSLBxzjKUPGC3RSfFhqfBo=\""
+          "Value": "W/\"nQ7br3NdzOmk1NAqpaT1hi/sqJeUcYv8gkgDps1urKc=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ruawlb2q7r"
+          "Value": "vx2m1e6tv0"
         },
         {
           "Name": "label",
@@ -6430,12 +6451,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-DSAGwZaYYpf6IOJgKjnPodSLBxzjKUPGC3RSfFhqfBo="
+          "Value": "sha256-nQ7br3NdzOmk1NAqpaT1hi/sqJeUcYv8gkgDps1urKc="
         }
       ]
     },
     {
-      "Route": "css/main.ruawlb2q7r.css",
+      "Route": "css/main.vx2m1e6tv0.css",
       "AssetFile": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/wwwroot/css/main.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -6445,7 +6466,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "40741"
+          "Value": "42573"
         },
         {
           "Name": "Content-Type",
@@ -6453,11 +6474,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"DSAGwZaYYpf6IOJgKjnPodSLBxzjKUPGC3RSfFhqfBo=\""
+          "Value": "\"nQ7br3NdzOmk1NAqpaT1hi/sqJeUcYv8gkgDps1urKc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 03 Mar 2025 08:32:29 GMT"
+          "Value": "Fri, 07 Mar 2025 21:01:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6467,7 +6488,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ruawlb2q7r"
+          "Value": "vx2m1e6tv0"
         },
         {
           "Name": "label",
@@ -6475,13 +6496,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-DSAGwZaYYpf6IOJgKjnPodSLBxzjKUPGC3RSfFhqfBo="
+          "Value": "sha256-nQ7br3NdzOmk1NAqpaT1hi/sqJeUcYv8gkgDps1urKc="
         }
       ]
     },
     {
-      "Route": "css/main.ruawlb2q7r.css.gz",
-      "AssetFile": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/obj/Debug/net9.0/compressed/9vdzh5hk4e-ruawlb2q7r.gz",
+      "Route": "css/main.vx2m1e6tv0.css.gz",
+      "AssetFile": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/obj/Debug/net9.0/compressed/9vdzh5hk4e-vx2m1e6tv0.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6490,7 +6511,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6943"
+          "Value": "7181"
         },
         {
           "Name": "Content-Type",
@@ -6498,11 +6519,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"gkkVfl6LkDKvBAIj28E50xdgYdebs73c5BfZUbhcjUE=\""
+          "Value": "\"JhZQC9ZyzM4LP831kCjlo8sR3lv1v/ZvEqXMS/M6aWA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 03 Mar 2025 08:32:29 GMT"
+          "Value": "Fri, 07 Mar 2025 21:01:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6520,7 +6541,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ruawlb2q7r"
+          "Value": "vx2m1e6tv0"
         },
         {
           "Name": "label",
@@ -6528,7 +6549,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-gkkVfl6LkDKvBAIj28E50xdgYdebs73c5BfZUbhcjUE="
+          "Value": "sha256-JhZQC9ZyzM4LP831kCjlo8sR3lv1v/ZvEqXMS/M6aWA="
         }
       ]
     },
@@ -28177,6 +28198,88 @@
       ]
     },
     {
+      "Route": "uploads/template/video/hero-bg.fa1xd2oz6u.mp4",
+      "AssetFile": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/wwwroot/uploads/template/video/hero-bg.mp4",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6168279"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/mp4"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xzlEW996Fs4sSWChA2DA9eo2Z1CE/JmgRg+0abbHYa8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 20:40:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fa1xd2oz6u"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/template/video/hero-bg.mp4"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xzlEW996Fs4sSWChA2DA9eo2Z1CE/JmgRg+0abbHYa8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/template/video/hero-bg.mp4",
+      "AssetFile": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/wwwroot/uploads/template/video/hero-bg.mp4",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6168279"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/mp4"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xzlEW996Fs4sSWChA2DA9eo2Z1CE/JmgRg+0abbHYa8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 20:40:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xzlEW996Fs4sSWChA2DA9eo2Z1CE/JmgRg+0abbHYa8="
+        }
+      ]
+    },
+    {
       "Route": "vendor/aos/aos.akmhyfivmy.css",
       "AssetFile": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/obj/Debug/net9.0/compressed/reckc13uc6-akmhyfivmy.gz",
       "Selectors": [
@@ -47221,7 +47324,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 20:30:32 GMT"
+          "Value": "Fri, 07 Mar 2025 20:31:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -47274,7 +47377,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 20:30:32 GMT"
+          "Value": "Fri, 07 Mar 2025 20:31:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -47311,7 +47414,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 20:30:32 GMT"
+          "Value": "Fri, 07 Mar 2025 20:31:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -47358,7 +47461,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 20:30:32 GMT"
+          "Value": "Fri, 07 Mar 2025 20:31:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -47411,7 +47514,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 20:30:32 GMT"
+          "Value": "Fri, 07 Mar 2025 20:31:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -47448,7 +47551,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 20:30:32 GMT"
+          "Value": "Fri, 07 Mar 2025 20:31:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -47495,7 +47598,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 20:30:32 GMT"
+          "Value": "Fri, 07 Mar 2025 20:31:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -47556,7 +47659,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 20:30:32 GMT"
+          "Value": "Fri, 07 Mar 2025 20:31:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -47601,7 +47704,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 20:30:32 GMT"
+          "Value": "Fri, 07 Mar 2025 20:31:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -47656,7 +47759,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 20:30:32 GMT"
+          "Value": "Fri, 07 Mar 2025 20:31:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -47717,7 +47820,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 20:30:32 GMT"
+          "Value": "Fri, 07 Mar 2025 20:31:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -47762,7 +47865,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 20:30:32 GMT"
+          "Value": "Fri, 07 Mar 2025 20:31:59 GMT"
         },
         {
           "Name": "Cache-Control",

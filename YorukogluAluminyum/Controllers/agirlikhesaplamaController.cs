@@ -2,12 +2,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace YorukogluAluminyum.Controllers;
 
-public class projelerimizController : Controller
+public class agirlikhesaplamaController : Controller
 {
     // GET
-    public IActionResult index()
+    public IActionResult Index()
     {
-        ViewBag.ActivePage = 3;
         return View();
     }
 }
