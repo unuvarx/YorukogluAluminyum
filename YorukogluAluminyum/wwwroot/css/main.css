@@ -1602,7 +1602,18 @@ section,
   height: 0.5rem;
   border-radius: 50%;
 }
+.laser {
+  transition: 0.3s;
+  animation: fadeIn 0.5s ease-out;
 
+  th {
+    color: var(--accent-color);
+  }
+
+  img {
+
+  }
+}
 
 /*--------------------------------------------------------------
 # Tabs Section
@@ -2002,4 +2013,23 @@ section,
 
 .mr-1 {
   margin-right: 4px;
+}
+
+
+.btn-calculate,
+.btn-calculate:focus {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  font-size: 14px;
+  padding: 8px 25px;
+
+  border-radius: 4px;
+  transition: 0.3s;
+  border: none;
+}
+
+.btn-calculate:hover,
+.btn-calculate:focus:hover {
+  color: var(--contrast-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 15%);
 }

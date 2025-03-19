@@ -1,0 +1,59 @@
+
+@{
+    Layout = "_Admin";
+    ViewBag.Title = "Ürünler";
+}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+</head>
+<body>
+<div class="admin">
+    <h4>Ürünler</h4>
+    <table class="table table-bordered table-dark">
+        <thead>
+        <tr>
+            <th >Resim-1</th>
+            <th >Resim-2</th>
+            <th >Resim-3</th>
+            <th >Resim-4</th>
+            <th >Kategori</th>
+            <th >İletişim</th>
+            <th >Tarih</th>
+            <th >İşlemler</th>
+           
+        </tr>
+        </thead>
+        <tbody>
+        @{
+            if (ViewBag.Products != null)
+            {
+                foreach (var product in ViewBag.Products)
+                {
+                    <tr>
+                    <th ><img src="@product.img1" alt=""></th>
+                    <th ><img src="@product.img2" alt=""></th>
+                    <th ><img src="@product.img3" alt=""></th>
+                    <th ><img src="@product.img4" alt=""></th>
+                    <td>@product.Category</td>
+                    <td>@product.Contact</td>
+                    <td>@product.Date</td>
+                    <td>
+                        <form action="/admin/DeleteProductReq" method="post">
+                            <input type="hidden" value="@product.ProductId" name="productId">
+                            <button class="btn btn-danger">Sil</button>
+                        </form></td>
+                </tr>
+                }
+            }
+        }
+        </tbody>
+    </table>
+</div>
+</body>
+
+</html>

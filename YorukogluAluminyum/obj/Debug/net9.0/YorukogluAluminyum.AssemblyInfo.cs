@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("YorukogluAluminyum")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e4ff78094f21e0496e8b30d55cd90f4bdf3fdc4b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0cefdadcefdac788bcc41e32779ba6ba32781e5")]
 [assembly: System.Reflection.AssemblyProductAttribute("YorukogluAluminyum")]
 [assembly: System.Reflection.AssemblyTitleAttribute("YorukogluAluminyum")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

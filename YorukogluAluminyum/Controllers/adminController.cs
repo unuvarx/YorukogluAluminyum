@@ -2,10 +2,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace YorukogluAluminyum.Controllers;
 
-public class agirlikhesaplamaController : Controller
+public class adminController : Controller
 {
     // GET
-    public IActionResult index()
+    public IActionResult Index()
     {
         return View();
     }

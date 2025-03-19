@@ -10,4 +10,10 @@ public class projelerimizController : Controller
         ViewBag.ActivePage = 3;
         return View();
     }
+    public IActionResult detay()
+    {
+        ViewBag.ActivePage = 3;
+        return View();
+    }
+
 }

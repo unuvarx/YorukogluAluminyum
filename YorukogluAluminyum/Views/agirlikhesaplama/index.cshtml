@@ -1,8 +1,128 @@
-@model TModel
+
 
 @{
-    ViewBag.Title = "title";
+    ViewBag.Title = "Metal Ağırlık Hesaplama";
     Layout = "_Layout";
 }
 
-<h2>title</h2>
+<!-- Page Title -->
+<div class="page-title" data-aos="fade">
+    <div class="heading">
+        <div class="container">
+            <div class="row d-flex justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h1>Metal Ağırlık Hesaplama<br></h1>
+                    <p class="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="breadcrumbs">
+        <div class="container">
+            <ol>
+                <li><a href="/anasayfa">Anasayfa</a></li>
+                <li class="current">Metal Ağırlık Hesaplama<br></li>
+            </ol>
+        </div>
+    </nav>
+</div><!-- End Page Title -->
+
+
+
+<section class="calculate">
+	<div class="container-xxl py-5">
+		<div class="container">
+			<div class="row g-5">
+				<div class="col-lg-7 wow fadeInUp" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+					<div class="row g-4 align-items-center">
+						<div class="col-sm-12">
+							<input type="hidden" name="density" id="density" class="form-control" readonly value="8.9">
+							<table class="table table-bordered">
+								<tbody>
+								<tr>
+									<td class="text-center"><strong>Ürün</strong></td>
+									<td>
+										<select name="maden" id="maden" class="form-select">
+											<option value="---">Lütfen Seçiniz</option>
+											<option value="2.7">Alüminyum</option>
+											<option value="8.9">Bakır</option>
+											<option value="8.5">Prinç</option>
+											<option value="1.35">Fiber</option>
+											<option value="1.4">Delrin</option>
+											<option value="1.2">Poliemit</option>
+											<option value="1.1">Polietilen</option>
+											<option value="1.2">Kestamid</option>
+											<option value="7.8">Paslanmaz</option>
+											<option value="8.9">Bronz</option>
+											<option value="7.4">Demir</option>
+											<option value="11.3">Kurşun</option>
+											<option value="7.1">Çinko</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td class="text-center"><strong>Tipi</strong></td>
+									<td>
+										<select name="urun" id="urun" class="form-select">
+											<option value="">Lütfen Seçiniz</option>
+											<option value="1">Çubuk</option>
+											<option value="2">Lama</option>
+											<option value="3">Boru</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td class="text-center"><strong>En (mm)</strong></td>
+									<td><input type="text" name="e" id="en" class="form-control" disabled></td>
+								</tr>
+								<tr>
+									<td class="text-center"><strong>Kalınlık (mm)</strong></td>
+									<td><input type="text" name="k" id="kalinlik" class="form-control" disabled></td>
+								</tr>
+								<tr>
+									<td class="text-center"><strong>Çap (mm)</strong></td>
+									<td><input type="text" name="c1" id="cap" class="form-control" disabled></td>
+								</tr>
+								<tr>
+									<td class="text-center"><strong>İç Çap (mm)</strong></td>
+									<td><input type="text" name="c2" id="ic_cap" class="form-control" disabled></td>
+								</tr>
+								<tr>
+									<td class="text-center"><strong>Boy (mm)</strong></td>
+									<td><input type="text" name="b" id="boy" class="form-control" disabled></td>
+								</tr>
+								<tr>
+									<td colspan="2" class="text-center">
+										<button type="button" id="calculate" class=" btn btn-calculate w-100">Hesapla</button>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" class="text-center">
+										<strong>Tahmini Ağırlık:</strong>
+										<input type="text" name="sonuc" id="sonuc" class="form-control text-center fw-bold" readonly value="---">
+									</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-5 wow fadeInUp" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+					<img src="~/uploads/template/img/calculate.jpg" class="img-fluid" alt="Ağırlık Hesaplama">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- AOS CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+<!-- jQuery -->
+<script src="lib/jquery/dist/jquery.min.js"></script>
+
+<!-- AOS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<!-- Custom Script -->
+<script src="~/js/calculate.js"></script>

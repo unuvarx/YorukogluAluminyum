@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/wwwroot/js/calculate.js",
+      "PackagePath": "staticwebassets/js/calculate.js"
+    },
+    {
       "Id": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/wwwroot/js/main.js",
       "PackagePath": "staticwebassets/js/main.js"
     },
@@ -277,6 +281,10 @@
       "PackagePath": "staticwebassets/uploads/template/img/apple-touch-icon.png"
     },
     {
+      "Id": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/wwwroot/uploads/template/img/calculate.jpg",
+      "PackagePath": "staticwebassets/uploads/template/img/calculate.jpg"
+    },
+    {
       "Id": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/wwwroot/uploads/template/img/course-1.jpg",
       "PackagePath": "staticwebassets/uploads/template/img/course-1.jpg"
     },
@@ -307,6 +315,14 @@
     {
       "Id": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/wwwroot/uploads/template/img/hero-bg.jpg",
       "PackagePath": "staticwebassets/uploads/template/img/hero-bg.jpg"
+    },
+    {
+      "Id": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/wwwroot/uploads/template/img/hero-bg.mp4",
+      "PackagePath": "staticwebassets/uploads/template/img/hero-bg.mp4"
+    },
+    {
+      "Id": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/wwwroot/uploads/template/img/laser.jpg",
+      "PackagePath": "staticwebassets/uploads/template/img/laser.jpg"
     },
     {
       "Id": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/wwwroot/uploads/template/img/logo.png",
@@ -399,10 +415,6 @@
     {
       "Id": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/wwwroot/uploads/template/img/trainers/trainer-3.jpg",
       "PackagePath": "staticwebassets/uploads/template/img/trainers/trainer-3.jpg"
-    },
-    {
-      "Id": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/wwwroot/uploads/template/video/hero-bg.mp4",
-      "PackagePath": "staticwebassets/uploads/template/video/hero-bg.mp4"
     },
     {
       "Id": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/wwwroot/vendor/aos/aos.cjs.js",

@@ -1,0 +1,26 @@
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Giriş Yap</title>
+    <link rel="stylesheet" href="~/css/login.css">
+    <link href="~/uploads/template/img/favicon.png" rel="icon">
+    <link href="~/uploads/template/img/apple-touch-icon.png" rel="apple-touch-icon">
+</head>
+<body>
+<div>
+    <form action="/admin/LoginReq" method="post">
+        <input type="text" name="username" placeholder="Kullanıcı Adı">
+        <input type="password" name="password" placeholder="Şifre">
+        <button type="submit" class="btn btn-primary">Giriş Yap</button>
+        <span>@(ViewBag.ErrorMessage != null ? ViewBag.ErrorMessage : "") </span>
+    </form>
+</div>
+</body>
+</html>
+

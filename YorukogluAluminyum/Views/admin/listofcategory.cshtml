@@ -1,0 +1,53 @@
+
+@{
+    Layout = "_Admin";
+    ViewBag.Title = "Kategoriler";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    
+    
+</head>
+<body>
+<div class="admin">
+    <h4>Kategoriler</h4>
+    <p>Not: Herhangi bir kategori sildiğinizde, o kategoriye ait ürünler de silinir!</p>
+    <table class="table table-bordered table-dark">
+        <thead>
+        <tr>
+            <th >Sıra</th>
+            <th >Kategori</th>
+            <th >İşlem</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        @{
+            if (ViewBag.Categories != null)
+            {
+                for (int i = 0; i < ViewBag.Categories.Count; i++)
+                {
+                    var category = ViewBag.Categories[i];
+                    <tr>
+                        <td>@(i + 1)</td>
+                        <td >@category.Category</td>
+                        <td>
+                            <form action="/admin/DeleteCategoryReq" method="post">
+                                <input type="hidden" name="categoryId" value="@category.CategoryId">
+                                <button type="submit" class="btn btn-danger">Sil</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            }
+        }
+
+        </tbody>
+    </table>
+
+</div>
+</body>
+</html>

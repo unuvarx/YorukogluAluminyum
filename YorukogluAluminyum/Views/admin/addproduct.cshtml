@@ -1,0 +1,80 @@
+@using System.Formats.Asn1
+
+
+@{
+    ViewBag.Title = "Ürün Ekle";
+    Layout = "_Admin";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    
+</head>
+<body>
+<div class="admin">
+    
+    <h4>Ürün Ekle</h4>
+    <p>Not: Yüklenen fotoğrafların dikey olmasına dikkat edin, aksi halde site üzerinde görüntüler net olmayabilir.</p>
+    @{
+        if (ViewBag.Categories != null)
+        {
+            <form action="/admin/AddProduct" method="post" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Kategori </label>
+                    <select required class="form-select" aria-label="Default select example" name="categoryId">
+                        <option value="" selected="" disabled>Kategori Seç</option>
+                        @{
+                            foreach (var category in ViewBag.Categories)
+                            {
+                                <option value="@category.CategoryId">@category.Category</option>
+                            }
+                        }
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">İletişim</label>
+                    <input required type="text" class="form-control" id="exampleInputEmail1"
+                           aria-describedby="emailHelp" name="contact">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Tarih</label>
+                    <input required type="date" class="form-control" id="exampleInputPassword1" name="date">
+                </div>
+                <div class="mb-3">
+                    <label for="image1" class="form-label">Resim-1</label>
+                    <input required type="file" class="form-control" id="image1" name="image1" accept=".png, .jpg, .jpeg, .heic">
+                </div>
+                <div class="mb-3">
+                    <label for="image2" class="form-label">Resim-2</label>
+                    <input required type="file" class="form-control" id="image2" name="image2" accept=".png, .jpg, .jpeg, .heic">
+                </div>
+                <div class="mb-3">
+                    <label for="image3" class="form-label">Resim-3</label>
+                    <input required type="file" class="form-control" id="image3" name="image3" accept=".png, .jpg, .jpeg, .heic">
+                </div>
+                <div class="mb-3">
+                    <label for="image4" class="form-label">Resim-4</label>
+                    <input required type="file" class="form-control" id="image4" name="image4" accept=".png, .jpg, .jpeg, .heic">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Ekle</button>
+                @{
+                    if (ViewBag.SuccessMessage != null)
+                    {
+                        <div class="SuccessMessage">@ViewBag.SuccessMessage</div>
+                    }
+                }
+                @{
+                    if (ViewBag.ErrorMessage != null)
+                    {
+                        <div class="ErrorMessage">@ViewBag.ErrırMessage</div>
+                    }
+                }
+            </form>
+        }
+    }
+</div>
+</body>
+</html>
