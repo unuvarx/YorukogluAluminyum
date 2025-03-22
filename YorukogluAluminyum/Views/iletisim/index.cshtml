@@ -3,7 +3,6 @@
     Layout = "_Layout";
 }
 
-
 <!-- Page Title -->
 <div class="page-title" data-aos="fade">
     <div class="heading">
@@ -11,7 +10,7 @@
             <div class="row d-flex justify-content-center text-center">
                 <div class="col-lg-8">
                     <h1>İletişim<br></h1>
-                    <p class="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+                    <p class="mb-0">Yörükoğlu Alüminyum ile projeleriniz hakkında iletişime geçmek için doğru yerdesiniz. Her türlü alüminyum ve metal işleme, üretim ve montaj hizmetiyle ilgili sorularınızı, önerilerinizi ya da taleplerinizi bizimle paylaşabilirsiniz. Uzman ekibimiz, ihtiyaçlarınıza en uygun çözümleri sunmak için hazır. Bizimle telefon, e-posta ya da sosyal medya üzerinden kolayca iletişim kurabilirsiniz. Sizin için buradayız!</p>
                 </div>
             </div>
         </div>
@@ -28,79 +27,99 @@
 
 
 
+
 <!-- Contact Section -->
-    <section id="contact" class="contact section">
+<section id="contact" class="contact section">
 
-      <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
-        
-        <iframe style="border:0; width: 100%; height: 300px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3130.710414147418!2d33.99848657586457!3d38.30937668118567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d66fcfd2b35ab3%3A0x782735840bab9018!2zWcO2csO8a2_En2x1IEFsw7xtaW55dW0gbHRkLsWfdGk!5e0!3m2!1str!2str!4v1742208435484!5m2!1str!2str"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div><!-- End Google Maps -->
+    <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <iframe style="border:0; width: 100%; height: 300px;"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3130.710414147418!2d33.99848657586457!3d38.30937668118567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d66fcfd2b35ab3%3A0x782735840bab9018!2zWcO2csO8a2_En2x1IEFsw7xtaW55dW0gbHRkLsWfdGk!5e0!3m2!1str!2str!4v1742208435484!5m2!1str!2str"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div><!-- End Google Maps -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
 
-          <div class="col-lg-4">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Adres</h3>
-                <p>Bahçesaray mahallesi 8626. Sokak (U - 2) no:2/B Aksaray/Merkez</p>
-              </div>
-            </div><!-- End Info Item -->
+            <div class="col-lg-4">
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                    <i class="bi bi-geo-alt flex-shrink-0"></i>
+                    <div>
+                        <h3>Adres</h3>
+                        <p>Bahçesaray mahallesi 8626. Sokak (U - 2) no:2/B Aksaray/Merkez</p>
+                    </div>
+                </div><!-- End Info Item -->
 
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Bizi Arayın</h3>
-                <p>+90 535 324 0527</p>
-              </div>
-            </div><!-- End Info Item -->
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                    <i class="bi bi-telephone flex-shrink-0"></i>
+                    <div>
+                        <h3>Bizi Arayın</h3>
+                        <p>+90 535 324 0527</p>
+                    </div>
+                </div><!-- End Info Item -->
 
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Mail</h3>
-                <p>info@yorukoglualuminyum.com</p>
-              </div>
-            </div><!-- End Info Item -->
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+                    <i class="bi bi-envelope flex-shrink-0"></i>
+                    <div>
+                        <h3>Mail</h3>
+                        <p>info@yorukoglualuminyum.com</p>
+                    </div>
+                </div><!-- End Info Item -->
 
-          </div>
+            </div>
+            <div class="col-lg-8">
 
-          <div class="col-lg-8">
-            <form action="/iletisim/ContactReq" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
+                <form action="/iletisim/ContactReq" method="post" class="php-email-form" onsubmit="return validateRecaptcha()">
+                    <div class="row gy-4">
+                        <div class="col-md-6">
+                            <input type="text" name="nameSurname" maxlength="50" class="form-control"
+                                   placeholder="Ad Soyad*"
+                                   required>
+                        </div>
 
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="İsim Soyisim" required="">
-                </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control" maxlength="50" name="email"
+                                   placeholder="Mail Adresi*" required>
+                        </div>
 
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Mail" required="">
-                </div>
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" maxlength="50" name="subject" placeholder="Konu">
+                        </div>
 
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Konu" required="">
-                </div>
+                        <div class="col-md-12">
+              <textarea class="form-control" name="message" maxlength="400" rows="6" placeholder="Mesaj*"
+                        required></textarea>
+                        </div>
 
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Mesaj" required=""></textarea>
-                </div>
+                        <!-- Google reCAPTCHA Alanı -->
+                        <div class="col-md-12 text-center">
+                            <div class="g-recaptcha"
+                                 data-sitekey="@(ViewBag.SiteKey != null ? ViewBag.SiteKey : "")"></div>
+                        </div>
 
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                        <!-- reCAPTCHA Token'ını Alıp Backend'e Gönder -->
+                        <input type="hidden" name="gRecaptchaResponse" id="gRecaptchaResponse">
 
-                  <button type="submit">Mesajı Gönder</button>
-                </div>
+                        <div class="col-md-12">
 
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
+
+                            <div class="loading d-none"></div>
+                            <div class="sent-message d-none"></div>
+                            <div class="error-message d-none"></div>
+                            <button type="submit">Gönder</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <!-- End Contact Form -->
 
         </div>
 
-      </div>
+    </div>
 
-    </section><!-- /Contact Section -->
+</section><!-- /Contact Section -->
+
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>

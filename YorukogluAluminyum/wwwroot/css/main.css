@@ -90,7 +90,7 @@ h6 {
 /* PHP Email Form Messages
 ------------------------------*/
 .php-email-form .error-message {
-  display: none;
+  
   background: #df1529;
   color: #ffffff;
   text-align: left;
@@ -100,7 +100,7 @@ h6 {
 }
 
 .php-email-form .sent-message {
-  display: none;
+ 
   color: #ffffff;
   background: #059652;
   text-align: center;
@@ -110,7 +110,6 @@ h6 {
 }
 
 .php-email-form .loading {
-  display: none;
   background: var(--surface-color);
   text-align: center;
   padding: 15px;
@@ -1254,6 +1253,7 @@ section,
 # Courses Section
 --------------------------------------------------------------*/
 .courses .course-item {
+  height: -webkit-fill-available;
   background-color: var(--surface-color);
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   border-radius: 5px;
@@ -2032,4 +2032,71 @@ section,
 .btn-calculate:focus:hover {
   color: var(--contrast-color);
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
+}
+
+.admin {
+  h4 {
+    margin: 1rem 0;
+  }
+  .btn-warning {
+    margin-bottom: 1rem;
+  }
+  table {
+    margin-top: 2rem;
+    img {
+      max-width: 5rem; /* Maksimum genişlik */
+      max-height: 5rem; /* Maksimum yükseklik */
+      width: auto; /* Oran korunarak genişlik ayarlanır */
+      height: auto; /* Oran korunarak yükseklik ayarlanır */
+      display: block; /* Boşluk problemlerini önlemek için */
+    }
+  }
+
+  .SuccessMessage {
+    padding: 1rem;
+    background-color: lightgreen;
+    color: darkgreen;
+    margin-top: 0.5rem;
+    border-radius: 8px;
+  }
+
+  .ErrorMessage {
+    padding: 1rem;
+    background-color: lightcoral;
+    color: darkred;
+    margin-top: 0.5rem;
+    border-radius: 8px;
+  }
+
+  .buttons {
+    padding: 0 1rem;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .btn {
+      width: 20rem;
+      margin: 1rem;
+
+    }
+    .mail-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span {
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25px!important;
+        height: 25px!important;
+        background-color: red;
+        color: white;
+        border-radius: 50%;
+        margin-left: 4px;
+      }
+    }
+  }
 }

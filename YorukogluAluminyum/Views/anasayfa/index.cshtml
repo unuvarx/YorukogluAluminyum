@@ -14,7 +14,7 @@
 
 
     <div class="container">
-        <h2 data-aos="fade-up" data-aos-delay="100">Yörükoğlu Alüminyum Metal</h2>
+        <h2 data-aos="fade-up" data-aos-delay="100">Yörükoğlu Alüminyum </h2>
         <p data-aos="fade-up" data-aos-delay="200">
             Dayanıklı ve estetik alüminyum & metal çözümlerimizle, sizlere en kaliteli hizmeti sunuyoruz.
             Demir kapı, korkuluk, balkon ve daha fazlası için bize ulaşın.
@@ -36,7 +36,7 @@
                 <img src="~/uploads/template/img/about.jpg" class="img-fluid" alt="Yörükoğlu Alüminyum Metal">
             </div>
             <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
-                <h3>Yörükoğlu Alüminyum Metal</h3>
+                <h3>Yörükoğlu Alüminyum</h3>
                 <p class="fst-italic">
                     Yılların verdiği deneyimle alüminyum ve metal sektöründe kaliteli ve dayanıklı çözümler sunuyoruz. Demir kapı, korkuluk, balkon korkuluğu ve daha birçok metal işçiliğinde uzman ekibimizle hizmetinizdeyiz.
                 </p>
@@ -60,28 +60,30 @@
         <div class="row gy-4">
             <div class="col-lg-3 col-md-6">
                 <div class="stats-item text-center w-100 h-100">
-                    <span data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="1" class="purecounter"></span>
+                    <span data-purecounter-start="0" data-purecounter-end="234" data-purecounter-duration="1" class="purecounter"></span>
                     <p>Mutlu Müşteri</p>
                 </div>
             </div><!-- End Stats Item -->
             <div class="col-lg-3 col-md-6">
                 <div class="stats-item text-center w-100 h-100">
-                    <span data-purecounter-start="0" data-purecounter-end="1000" data-purecounter-duration="1" class="purecounter"></span>
+                    <span data-purecounter-start="0" data-purecounter-end="410" data-purecounter-duration="1" class="purecounter"></span>
                     <p>Tamamlanan Proje</p>
                 </div>
             </div><!-- End Stats Item -->
             <div class="col-lg-3 col-md-6">
                 <div class="stats-item text-center w-100 h-100">
-                    <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="purecounter"></span>
+                    <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
                     <p>Yıllık Tecrübe</p>
                 </div>
             </div><!-- End Stats Item -->
             <div class="col-lg-3 col-md-6">
                 <div class="stats-item text-center w-100 h-100">
-                    <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="purecounter"></span>
-                    <p>Uzman Personel</p>
+                    <span>7/24</span> <!-- Destek saatini burada sabit olarak yazabilirsiniz -->
+                    <p>Destek Saatleri</p>
                 </div>
+
             </div><!-- End Stats Item -->
+
         </div>
     </div>
 </section><!-- /Counts Section -->
@@ -97,7 +99,7 @@
 
             <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="why-box">
-                    <h3>Neden Yörükoğlu Alüminyum Metal?</h3>
+                    <h3>Neden Yörükoğlu Alüminyum?</h3>
                     <p>
                         Yörükoğlu Alüminyum Metal olarak, kaliteli alüminyum ve metal ürünleriyle uzun yıllardır sanayi sektöründe hizmet vermekteyiz. Demir kapı, korkuluk, balkon gibi ürünlerimizle güvenliği ve estetiği ön planda tutuyoruz. Müşteri memnuniyetini her zaman önceliğimiz olarak kabul ediyoruz ve her projede en yüksek standartları sağlamak için çalışıyoruz.
                     </p>
@@ -270,97 +272,99 @@
 
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
-    <h2>Ürünlerimiz</h2>
-    <p>Popüler Ürünlerimiz</p>
+    <h2>PROJELERİMİZ</h2>
+    <p>POPÜLER PROJELERİMİZ</p>
   </div><!-- End Section Title -->
 
   <div class="container">
 
+
     <div class="row">
+        @{
+            if (ViewBag.Products != null)
+            {
+                for (int i = 0; i < ViewBag.Products.Count; i++)
+                {
+                    var product = ViewBag.Products[i];
+                    var carouselId = "carousel_" + product.ProductId; // Dinamik ID oluştur
 
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-        <div class="course-item">
-          <img src="~/uploads/template/img/course-1.jpg" class="img-fluid" alt="Demir Kapı">
-          <div class="course-content">
-            <div class="d-flex justify-content-between align-items-center mb-3">
-              <p class="category">Demir Kapı</p>
-              <p class="price">₺5000</p>
-            </div>
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0 mb-3" data-aos="zoom-in"
+                         data-aos-delay="300">
+                        <a href="/projelerimiz/detay?proje=@product.ProductId">
 
-            <h3><a href="course-details.html">Demir Kapı Tasarımı</a></h3>
-            <p class="description">Dayanıklı demir kapılarımız, estetik ve güvenliği bir arada sunuyor. Farklı tasarımlar ve özelliklerle her ihtiyaca uygun çözümler.</p>
-            <div class="trainer d-flex justify-content-between align-items-center">
-              <div class="trainer-profile d-flex align-items-center">
-                <img src="~/uploads/template/img/trainers/trainer-1-2.jpg" class="img-fluid" alt="Yörükoğlu Metal">
-                <a href="" class="trainer-link">Yörükoğlu Metal</a>
-              </div>
-              <div class="trainer-rank d-flex align-items-center">
-                <i class="bi bi-person user-icon"></i>&nbsp;30
-                &nbsp;&nbsp;
-                <i class="bi bi-heart heart-icon"></i>&nbsp;45
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> <!-- End Course Item-->
+                            <div class="course-item">
+                                <!-- Carousel -->
+                                <div id="@carouselId" class="carousel slide" data-bs-ride="carousel">
+                                    <!-- Indicators -->
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#@carouselId" data-bs-slide-to="0" class="active"
+                                                aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#@carouselId" data-bs-slide-to="1"
+                                                aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#@carouselId" data-bs-slide-to="2"
+                                                aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#@carouselId" data-bs-slide-to="3"
+                                                aria-label="Slide 4"></button>
+                                    </div>
 
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-        <div class="course-item">
-          <img src="~/uploads/template/img/course-2.jpg" class="img-fluid" alt="Korkuluk">
-          <div class="course-content">
-            <div class="d-flex justify-content-between align-items-center mb-3">
-              <p class="category">Korkuluk</p>
-              <p class="price">₺3500</p>
-            </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img style="height: 25rem; object-fit: cover" src="@product.img1" class="d-block w-100" alt="Demir Kapı ve Korkuluk">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img style="height: 25rem; object-fit: cover" src="@product.img2" class="d-block w-100"
+                                                 alt="Demir Kapı ve Korkuluk 2">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img style="height: 25rem; object-fit: cover" src="@product.img3" class="d-block w-100"
+                                                 alt="Demir Kapı ve Korkuluk 3">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img style="height: 25rem; object-fit: cover" src="@product.img4" class="d-block w-100"
+                                                 alt="Demir Kapı ve Korkuluk 4">
+                                        </div>
+                                    </div>
 
-            <h3><a href="course-details.html">Metal Korkuluk Üretimi</a></h3>
-            <p class="description">Güvenlik ve estetiği ön planda tutarak, her tür metal korkuluk ihtiyacınıza uygun çözümler sunuyoruz.</p>
-            <div class="trainer d-flex justify-content-between align-items-center">
-              <div class="trainer-profile d-flex align-items-center">
-                <img src="~/uploads/template/img/trainers/trainer-2-2.jpg" class="img-fluid" alt="Yörükoğlu Metal">
-                <a href="" class="trainer-link">Yörükoğlu Metal</a>
-              </div>
-              <div class="trainer-rank d-flex align-items-center">
-                <i class="bi bi-person user-icon"></i>&nbsp;25
-                &nbsp;&nbsp;
-                <i class="bi bi-heart heart-icon"></i>&nbsp;50
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> <!-- End Course Item-->
+                                    <!-- Left and Right controls -->
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#@carouselId"
+                                            data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#@carouselId"
+                                            data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <!-- End Carousel -->
 
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-        <div class="course-item">
-          <img src="~/uploads/template/img/course-3.jpg" class="img-fluid" alt="Alüminyum Ürünler">
-          <div class="course-content">
-            <div class="d-flex justify-content-between align-items-center mb-3">
-              <p class="category">Alüminyum</p>
-              <p class="price">₺4200</p>
-            </div>
+                                <div class="course-content">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <p class="category">@product.Category</p>
+                                    <a href="https://wa.me/905353240527" text=  "Merhaba,%20https://yorukoglualuminyum.com/projelerimiz/detay?proje=@product.ProductId%20hakkında%20 fiyat ve bilgi%20almak%20istiyorum." target="_blank" class="price">Fiyat Talep Edin</a>
+                                    </div>
 
-            <h3><a href="course-details.html">Alüminyum Kapı ve Pencere</a></h3>
-            <p class="description">Yüksek kaliteli alüminyum ile üretilen kapı ve pencere çözümleri, dayanıklılık ve enerji verimliliği sağlar.</p>
-            <div class="trainer d-flex justify-content-between align-items-center">
-              <div class="trainer-profile d-flex align-items-center">
-                <img src="~/uploads/template/img/trainers/trainer-3-2.jpg" class="img-fluid" alt="Yörükoğlu Metal">
-                <a href="" class="trainer-link">Yörükoğlu Metal</a>
-              </div>
-              <div class="trainer-rank d-flex align-items-center">
-                <i class="bi bi-person user-icon"></i>&nbsp;20
-                &nbsp;&nbsp;
-                <i class="bi bi-heart heart-icon"></i>&nbsp;40
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> <!-- End Course Item-->
 
+                                    <p class="description">
+                                        @(product.Description.Length > 100 ? product.Description.Substring(0, 100) + "..." : product.Description)
+                                    </p>
+
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- End Course Item-->
+                }
+            }
+        }
     </div>
 
   </div>
 
 </section><!-- /Courses Section -->
+
 
 
 

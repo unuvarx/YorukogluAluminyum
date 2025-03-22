@@ -1,85 +1,54 @@
-/**
-* PHP Email Form Validation - v3.9
-* URL: https://bootstrapmade.com/php-email-form/
-* Author: BootstrapMade.com
-*/
-(function () {
-  "use strict";
+$(document).ready(function () {
+  $(".php-email-form").submit(function (event) {
+    event.preventDefault(); // Sayfanın yenilenmesini engelle
 
-  let forms = document.querySelectorAll('.php-email-form');
+    // reCAPTCHA doğrulama
+    if (!validateRecaptcha()) {
+      return false; // reCAPTCHA doğrulama geçmediyse formu gönderme
+    }
 
-  forms.forEach( function(e) {
-    e.addEventListener('submit', function(event) {
-      event.preventDefault();
+    $(".loading").removeClass("d-none"); // Yükleniyor animasyonunu göster
+    $(".sent-message, .error-message").addClass("d-none"); // Önceki mesajları gizle
 
-      let thisForm = this;
+    $.ajax({
+      url: $(this).attr("action"), // Formun action URL'si
+      type: $(this).attr("method"), // Formun method'u (POST olmalı)
+      data: $(this).serialize(), // Form verilerini al
+      success: function (response) {
+        console.log(response);
 
-      let action = thisForm.getAttribute('action');
-      let recaptcha = thisForm.getAttribute('data-recaptcha-site-key');
-      
-      if( ! action ) {
-        displayError(thisForm, 'The form action property is not set!');
-        return;
-      }
-      thisForm.querySelector('.loading').classList.add('d-block');
-      thisForm.querySelector('.error-message').classList.remove('d-block');
-      thisForm.querySelector('.sent-message').classList.remove('d-block');
+        // Yükleniyor animasyonunu gizle
+        $(".loading").addClass("d-none");
 
-      let formData = new FormData( thisForm );
-
-      if ( recaptcha ) {
-        if(typeof grecaptcha !== "undefined" ) {
-          grecaptcha.ready(function() {
-            try {
-              grecaptcha.execute(recaptcha, {action: 'php_email_form_submit'})
-              .then(token => {
-                formData.set('recaptcha-response', token);
-                php_email_form_submit(thisForm, action, formData);
-              })
-            } catch(error) {
-              displayError(thisForm, error);
-            }
-          });
+        if (response.success) {
+          $(".sent-message").removeClass("d-none").text(response.message); // Başarı mesajını göster
         } else {
-          displayError(thisForm, 'The reCaptcha javascript API url is not loaded!')
+          $(".error-message").removeClass("d-none").text("Bir hata oluştu, lütfen tekrar deneyin."); // Hata mesajını göster
         }
-      } else {
-        php_email_form_submit(thisForm, action, formData);
+
+        $(".php-email-form")[0].reset(); // Formu temizle
+
+        // reCAPTCHA'yı sıfırlama
+        grecaptcha.reset();
+      },
+      error: function () {
+        console.log("Bir hata oluştu.");
+
+        // Yükleniyor animasyonunu gizle
+        $(".loading").addClass("d-none");
+
+        $(".error-message").removeClass("d-none").text("Bir hata oluştu, lütfen tekrar deneyin."); // Hata mesajını göster
       }
     });
   });
+});
 
-  function php_email_form_submit(thisForm, action, formData) {
-    fetch(action, {
-      method: 'POST',
-      body: formData,
-      headers: {'X-Requested-With': 'XMLHttpRequest'}
-    })
-    .then(response => {
-      if( response.ok ) {
-        return response.text();
-      } else {
-        throw new Error(`${response.status} ${response.statusText} ${response.url}`); 
-      }
-    })
-    .then(data => {
-      thisForm.querySelector('.loading').classList.remove('d-block');
-      if (data.trim() == 'OK') {
-        thisForm.querySelector('.sent-message').classList.add('d-block');
-        thisForm.reset(); 
-      } else {
-        throw new Error(data ? data : 'Form submission failed and no error message returned from: ' + action); 
-      }
-    })
-    .catch((error) => {
-      displayError(thisForm, error);
-    });
+function validateRecaptcha() {
+  var response = grecaptcha.getResponse();
+  if (!response) {
+    alert("Lütfen reCAPTCHA'yı doğrulayın.");
+    return false;
   }
-
-  function displayError(thisForm, error) {
-    thisForm.querySelector('.loading').classList.remove('d-block');
-    thisForm.querySelector('.error-message').innerHTML = error;
-    thisForm.querySelector('.error-message').classList.add('d-block');
-  }
-
-})();
+  document.getElementById("gRecaptchaResponse").value = response; // reCAPTCHA yanıtını gizli alana ekle
+  return true;
+}

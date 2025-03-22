@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/YorukogluAluminyum.xz7a5h0cjq.bundle.scp.css"
     },
     {
+      "Id": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/wwwroot/css/login.css",
+      "PackagePath": "staticwebassets/css/login.css"
+    },
+    {
       "Id": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/wwwroot/css/main.css",
       "PackagePath": "staticwebassets/css/main.css"
     },
@@ -267,6 +271,38 @@
     {
       "Id": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/wwwroot/lib/jquery/dist/jquery.slim.min.map",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.min.map"
+    },
+    {
+      "Id": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/wwwroot/uploads/products/27944051.png",
+      "PackagePath": "staticwebassets/uploads/products/27944051.png"
+    },
+    {
+      "Id": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/wwwroot/uploads/products/31200879.jpeg",
+      "PackagePath": "staticwebassets/uploads/products/31200879.jpeg"
+    },
+    {
+      "Id": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/wwwroot/uploads/products/49912289.png",
+      "PackagePath": "staticwebassets/uploads/products/49912289.png"
+    },
+    {
+      "Id": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/wwwroot/uploads/products/57797573.jpeg",
+      "PackagePath": "staticwebassets/uploads/products/57797573.jpeg"
+    },
+    {
+      "Id": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/wwwroot/uploads/products/62531960.png",
+      "PackagePath": "staticwebassets/uploads/products/62531960.png"
+    },
+    {
+      "Id": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/wwwroot/uploads/products/72161162.png",
+      "PackagePath": "staticwebassets/uploads/products/72161162.png"
+    },
+    {
+      "Id": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/wwwroot/uploads/products/75317536.png",
+      "PackagePath": "staticwebassets/uploads/products/75317536.png"
+    },
+    {
+      "Id": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/wwwroot/uploads/products/78292061.png",
+      "PackagePath": "staticwebassets/uploads/products/78292061.png"
     },
     {
       "Id": "/Users/developer/Documents/SOFTWARE/PROJELER/YorukogluAluminyum/YorukogluAluminyum/wwwroot/uploads/template/img/about-2.jpg",

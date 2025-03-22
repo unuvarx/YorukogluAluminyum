@@ -9,7 +9,28 @@
 <html>
 
 <head>
-    
+    <style>
+        /* .message için stil */
+        .desc {
+            max-width: 50px; /* Mesaj uzunluğunu sınırlamak için uygun bir genişlik belirleyin */
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            cursor: pointer; /* Kullanıcıya metne tıklanabileceği bilgisini veriyor */
+        }
+
+        /* Mesajın tamamını göstermek için tooltip */
+        .desc-tooltip {
+            display: none;
+            position: absolute;
+            background-color: #f8f9fa;
+            border: 1px solid #ccc;
+            padding: 5px;
+            max-width: 300px;
+            word-wrap: break-word;
+            z-index: 1000;
+        }
+    </style>
 </head>
 <body>
 <div class="admin">
@@ -22,8 +43,8 @@
             <th >Resim-3</th>
             <th >Resim-4</th>
             <th >Kategori</th>
-            <th >İletişim</th>
-            <th >Tarih</th>
+            <th >Açıklama</th>
+            
             <th >İşlemler</th>
            
         </tr>
@@ -35,25 +56,35 @@
                 foreach (var product in ViewBag.Products)
                 {
                     <tr>
-                    <th ><img src="@product.img1" alt=""></th>
-                    <th ><img src="@product.img2" alt=""></th>
-                    <th ><img src="@product.img3" alt=""></th>
-                    <th ><img src="@product.img4" alt=""></th>
-                    <td>@product.Category</td>
-                    <td>@product.Contact</td>
-                    <td>@product.Date</td>
-                    <td>
-                        <form action="/admin/DeleteProductReq" method="post">
-                            <input type="hidden" value="@product.ProductId" name="productId">
-                            <button class="btn btn-danger">Sil</button>
-                        </form></td>
-                </tr>
+                        <th ><img src="@product.img1" alt=""></th>
+                        <th ><img src="@product.img2" alt=""></th>
+                        <th ><img src="@product.img3" alt=""></th>
+                        <th ><img src="@product.img4" alt=""></th>
+                        <td>@product.Category</td>
+                        <td class="desc" data-bs-toggle="tooltip" title="@product.Description">@product.Description</td>
+                   
+                        <td>
+                            <form action="/admin/DeleteProductReq" method="post">
+                                <input type="hidden" value="@product.ProductId" name="productId">
+                                <button class="btn btn-danger">Sil</button>
+                            </form></td>
+                    </tr>
                 }
             }
         }
         </tbody>
     </table>
 </div>
+<script src="~/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // Tooltip'leri aktive etmek için
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    });
+</script>
 </body>
+
 
 </html>

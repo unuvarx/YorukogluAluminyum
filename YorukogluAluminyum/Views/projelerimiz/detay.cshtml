@@ -10,10 +10,8 @@
         <div class="container">
             <div class="row d-flex justify-content-center text-center">
                 <div class="col-lg-8">
-                    <h1>Projelerimiz<br></h1>
-                    <p class="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas
-                        consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit
-                        quaerat ipsum dolorem.</p>
+                    <h1>Proje Detayı<br></h1>
+                    <p class="mb-0">Yörükoğlu Alüminyum olarak, her bir projeye özel tasarımlarımızla estetik ve dayanıklılığı birleştiriyoruz. Müşterilerimizin ihtiyaçlarına uygun çözümler sunmak için en son teknoloji ile donatılmış ekipmanlar ve deneyimli bir ekip ile çalışıyoruz. Her projede, kaliteyi en üst düzeye çıkarmak için titizlikle çalışıyoruz. Projelerimizin detaylarını inceleyerek, sizin için sunduğumuz yenilikçi ve fonksiyonel çözümleri keşfedin. Bizimle iletişime geçin ve projelerinizi birlikte hayata geçirelim!</p>
                 </div>
             </div>
         </div>
@@ -22,7 +20,7 @@
         <div class="container">
             <ol>
                 <li><a href="/anasayfa">Anasayfa</a></li>
-                <li class="current"> Projelerimiz<br></li>
+                <li class="current"> Proje Detayı<br></li>
             </ol>
         </div>
     </nav>
@@ -36,60 +34,65 @@
 <section id="courses-course-details" class="courses-course-details section">
 
     <div class="container" data-aos="fade-up">
+        @{
+            if (ViewBag.Product != null)
+            {
+                var product = ViewBag.Product;
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="course-item">
+                            <!-- Carousel -->
+                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                <!-- Indicators -->
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                </div>
 
-        <div class="row">
-            <div class="col-lg-8">
-                <div class="course-item">
-                    <!-- Carousel -->
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <!-- Indicators -->
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img style="height: 45rem; object-fit: cover" src="@product.img1" class="d-block w-100" alt="Demir Kapı ve Korkuluk">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img style="height: 45rem; object-fit: cover" src="@product.img2" class="d-block w-100" alt="Demir Kapı ve Korkuluk 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img style="height: 45rem; object-fit: cover" src="@product.img3" class="d-block w-100" alt="Demir Kapı ve Korkuluk 3">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img style="height: 45rem; object-fit: cover" src="@product.img4" class="d-block w-100" alt="Demir Kapı ve Korkuluk 4">
+                                    </div>
+                                </div>
+
+                                <!-- Left and Right controls -->
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <!-- End Carousel -->
+
+                            <div class="course-content">
+
+
+                                <h3><a href="/projelerimiz/detay">@product.Category</a></h3>
+                                <p class="description">@product.Description</p>
+
+                            </div>
                         </div>
-
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="~/uploads/template/img/course-1.jpg" class="d-block w-100" alt="Demir Kapı ve Korkuluk">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="~/uploads/template/img/course-2.jpg" class="d-block w-100" alt="Demir Kapı ve Korkuluk 2">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="~/uploads/template/img/course-3.jpg" class="d-block w-100" alt="Demir Kapı ve Korkuluk 3">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="~/uploads/template/img/course-1.jpg" class="d-block w-100" alt="Demir Kapı ve Korkuluk 4">
-                            </div>
-                        </div>
-
-                        <!-- Left and Right controls -->
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
-                    <!-- End Carousel -->
 
-                    <div class="course-content">
-                        
-
-                        <h3><a href="/projelerimiz/detay">Demir Kapı ve Korkuluk Üretimi</a></h3>
-                        <p class="description">Demir kapı ve korkuluk üretiminde uzman kadromuzla estetik ve güvenliği ön planda tutuyoruz. Dayanıklı ve uzun ömürlü çözümler sunuyoruz.</p>
-
-                    </div>
                 </div>
-            </div>
-           
-        </div>
+            }
+        }
 
-    </div>
+            </div>
 
 </section><!-- /Courses Course Details Section -->
 
